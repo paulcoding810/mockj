@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "@mockj/db",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.ts",
+  "scripts": {
+    "generate": "drizzle-kit generate",
+    "migrate": "tsx migrate.ts",
+    "studio": "drizzle-kit studio",
+    "typecheck": "tsc --noEmit"
+  },
+  "prettier": "@mockj/prettier-config",
+  "dependencies": {
+    "@paralleldrive/cuid2": "^2.2.2",
+    "@mockj/shared": "workspace:*",
+    "better-sqlite3": "^11.3.0",
+    "dotenv": "^16.4.1",
+    "drizzle-orm": "^0.38.3",
+    "tsx": "^4.7.1"
+  },
+  "devDependencies": {
+    "@mockj/tsconfig": "workspace:*",
+    "@tsconfig/node22": "^22.0.0",
+    "@types/better-sqlite3": "^7.6.11",
+    "drizzle-kit": "^0.30.01"
+  }
+}

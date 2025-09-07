@@ -1,0 +1,27 @@
+{
+  "name": "mockj",
+  "private": true,
+  "scripts": {
+    "build": "turbo --no-daemon build",
+    "check-types": "turbo run check-types",
+    "db:generate": "pnpm --filter @mockj/db run generate",
+    "db:migrate": "pnpm --filter @mockj/db run migrate",
+    "db:studio": "pnpm --filter @mockj/db studio",
+    "dev": "turbo --no-daemon dev --parallel",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "lint": "turbo run lint",
+    "prepare": "husky",
+    "typecheck": "turbo --no-daemon typecheck",
+    "web": "pnpm --filter @mockj/web run dev"
+  },
+  "devDependencies": {
+    "husky": "^9.0.11",
+    "prettier": "^3.5.3",
+    "turbo": "^2.5.4",
+    "typescript": "5.8.2"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=18"
+  }
+}

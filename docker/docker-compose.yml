@@ -1,0 +1,16 @@
+name: mockj
+services:
+  web:
+    hostname: mockj
+    container_name: mockj
+    image: ghcr.io/paulcoding810/mockj:latest
+    restart: unless-stopped
+    volumes:
+      - ./data:/data
+    ports:
+      - 8009:3000
+    env_file:
+      - .env
+    environment:
+      MEILI_ADDR: http://meilisearch:7700
+      DATA_DIR: /data

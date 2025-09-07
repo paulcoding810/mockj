@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "@mockj/shared",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "index.ts",
+  "scripts": {
+    "format": "prettier . --ignore-path ../../.prettierignore",
+    "format:fix": "prettier . --write --ignore-path ../../.prettierignore",
+    "lint": "oxlint .",
+    "lint:fix": "oxlint . --fix",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "prettier": "@mockj/prettier-config",
+  "dependencies": {
+    "glob": "^11.0.0",
+    "js-tiktoken": "^1.0.20",
+    "liteque": "^0.3.2",
+    "meilisearch": "^0.37.0",
+    "typescript-parsec": "^0.3.4",
+    "winston": "^3.11.0",
+    "zod": "^3.24.2",
+    "zod-to-json-schema": "^3.24.3"
+  },
+  "devDependencies": {
+    "@mockj/prettier-config": "workspace:^0.1.0",
+    "@mockj/tsconfig": "workspace:^0.1.0",
+    "vitest": "^1.6.1"
+  }
+}

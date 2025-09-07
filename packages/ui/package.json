@@ -1,0 +1,7 @@
+{
+  "name": "@mockj/ui",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  }
+}
