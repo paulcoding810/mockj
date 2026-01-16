@@ -1,3 +1,8 @@
+## ⚠️ Deprecated
+
+This repository is **deprecated** and is no longer maintained.
+Please use **[mockj-go](https://github.com/paulcoding810/mockj-go)** instead.
+
 <h1 align="center">
   <sub>
     <img src="apps/web/app/favicon.ico" height="38" width="38">
